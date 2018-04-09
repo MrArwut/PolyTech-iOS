@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -100,6 +100,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="rmZ-j9-oUx" secondAttribute="trailing" constant="48" id="peK-0c-mA3"/>
                             <constraint firstItem="rmZ-j9-oUx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="49" id="xpc-xC-3oj"/>
                         </constraints>
+                        <connections>
+                            <action selector="backgroundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bBV-Yu-nwj"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="lblEmail" destination="eLb-J6-eam" id="E9c-DY-9KT"/>

@@ -26,13 +26,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func backgroundTapped(_ sender: Any) {
+        self.view.endEditing(true)
+    }
+    
     @IBAction func btClick(_ sender: UIButton) {
         lblEmail.text = "User : \(txtEmail.text ?? "")"
         lblPassword.text = "Password : \(txtPassword.text!)"
+        self.view.endEditing(true)
     }
-
-    
-    
-
 }
 
