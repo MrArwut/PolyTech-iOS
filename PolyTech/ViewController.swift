@@ -10,9 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var lblNickName: UILabel!
-    @IBOutlet weak var txtNickName: UITextField!
-
+    @IBOutlet weak var lblSystem: UILabel!
+    @IBOutlet weak var txtEmail: UITextField!
+    @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var lblEmail: UILabel!
+    @IBOutlet weak var lblPassword: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +27,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btClick(_ sender: UIButton) {
-        lblNickName.text = txtNickName.text
+        lblEmail.text = "User : \(txtEmail.text ?? "")"
+        lblPassword.text = "Password : \(txtPassword.text!)"
     }
+
     
     
 
